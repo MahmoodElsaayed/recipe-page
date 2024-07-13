@@ -151,7 +151,8 @@ li,
     font-weight: 200;
 }
 
-.nutrition table th, .nutrition table td {
+.nutrition table th,
+.nutrition table td {
     padding: 10px 30px;
 }
 
@@ -163,4 +164,45 @@ li,
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+        font-size: 1.3rem;
+    }
+
+    main {
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .recipe-overview p {
+        margin-top: 0 !important;
+    }
+
+    .recipe-overview>div~*,
+    .recipe-info {
+        padding: 15px;
+    }
+
+    .recipe-overview .recipe-img {
+        height: 200px;
+        border-radius: 0;
+    }
 }
